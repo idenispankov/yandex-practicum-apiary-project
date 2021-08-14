@@ -80,6 +80,7 @@
 .navbar__list_item {
   margin: 0;
   margin-bottom: 20px;
+  outline: none;
 }
 .navbar__list_item:nth-child(5) {
   margin-bottom: 70px;
@@ -90,6 +91,7 @@
   line-height: 39px;
   text-align: center;
   color: #000000;
+  outline: none;
 }
 .navbar__button_mobile {
   background: #ff9900;
@@ -174,8 +176,8 @@
   }
 }
 
-@media screen and (orientation: landscape) and (max-width: 900px) {
+@media screen and (orientation: landscape) and (min-width: 600px) {
   .hamburger__list {
-    height: 40vh;
+    top: 87px;
   }
 }
