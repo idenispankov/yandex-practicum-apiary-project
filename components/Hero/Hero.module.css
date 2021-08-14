@@ -8,8 +8,8 @@
 }
 
 .text__container {
-  max-width: 300px;
-  margin: 0 auto;
+  /* max-width: 288px; */
+  /* margin: 0 auto; */
 }
 
 .section__heading {
@@ -17,6 +17,9 @@
   font-size: 34px;
   line-height: 39px;
   margin-bottom: 30px;
+  padding: 0 16px;
+  max-width: 288px;
+  margin: 0 auto;
 }
 
 .section__heading_span {
