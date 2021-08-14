@@ -1,0 +1,61 @@
+.section {
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 87px;
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  overflow: hidden;
+  position: relative;
+  min-height: 638px;
+  padding: 160px 80px 0;
+  box-sizing: border-box;
+}
+
+.text__container {
+  max-width: 620px;
+}
+
+.section__heading {
+  margin: 0;
+  margin-bottom: 60px;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.section__heading_span {
+  color: #ff9900;
+}
+
+.section__image {
+  background: url('../../public/images/hero_large.png') no-repeat center
+    center/cover;
+  min-width: 542px;
+  height: 530px;
+  position: absolute;
+  top: 60px;
+  right: 80px;
+}
+
+@media screen and (max-width: 1300px) {
+  .section {
+    padding: 80px 40px 32px;
+  }
+  .section__image {
+    /* background: url('../../public/images/hero_medium.png') no-repeat center
+      center/cover; */
+    min-width: 366px;
+    max-height: 358px;
+    top: 248px;
+    right: 40px;
+    /* position: absolute; */
+    /* bottom: 32px;
+    right: 40px; */
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .section {
+    margin-top: 60px;
+  }
+}
