@@ -97,18 +97,14 @@
     padding-bottom: 60px;
   }
   .text__container {
-    max-width: 100%;
-    max-width: 295px;
+    max-width: 480px;
     margin: 0 auto;
     margin-top: 32px;
   }
   .heading {
     font-size: var(--mobile-heading-font-size);
     line-height: var(--mobile-heading-line-height);
-    text-align: start;
-  }
-  .linebreak {
-    display: block;
+    text-align: center;
   }
   .image__container {
     max-width: 320px;
@@ -118,10 +114,16 @@
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 500px) {
   .text__container {
     max-width: 288px;
     margin: 0 auto;
     margin-top: 32px;
+  }
+  .linebreak {
+    display: block;
+  }
+  .heading {
+    text-align: start;
   }
 }
