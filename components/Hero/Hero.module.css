@@ -116,7 +116,7 @@
 
 @media screen and (max-width: 500px) {
   .text__container {
-    max-width: 288px;
+    max-width: 318px;
     margin: 0 auto;
     margin-top: 32px;
   }
