@@ -9,7 +9,10 @@ export default function Navbar() {
       <nav className={styles.navbar}>
         <Link href='/'>
           <a>
-            <div className={styles.logo}></div>
+            <div
+              className={styles.logo}
+              onClick={() => setIsOpen(!isOpen)}
+            ></div>
           </a>
         </Link>
         <ul className={`${styles.list} ${isOpen && styles.show}`}>
