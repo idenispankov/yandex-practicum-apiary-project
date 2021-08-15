@@ -27,6 +27,7 @@ body {
   padding: 0;
   font-family: 'SuisseInt-Book', sans-serif;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 /**

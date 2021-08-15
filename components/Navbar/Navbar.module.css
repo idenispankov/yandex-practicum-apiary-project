@@ -1,17 +1,18 @@
 .navbar {
-  width: 100%;
-  max-width: 1280px;
+  box-sizing: border-box;
+  max-width: 1440px;
   margin: 0 auto;
   height: 60px;
   margin-top: 27px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* border: 1px solid red; */
+  padding: 0 80px;
+  overflow-y: auto;
 }
 
 .logo {
-  background: url('../../public//images/logo.svg') no-repeat;
+  background: url('../../public//images/logo.svg') no-repeat center center/cover;
   height: 35px;
   width: 189px;
 }
@@ -24,7 +25,7 @@
   width: 488px;
 }
 
-.list__item {
+.list__link {
   outline: none;
   text-decoration: none;
   font-size: 16px;
@@ -45,10 +46,106 @@
   background: #fff;
   border: 2px solid var(--orange-color);
   color: var(--orange-color);
+  font-size: 16px;
+  line-height: 20px;
+  padding: 0;
   transition: all 0.3s linear;
 }
 
 .button:hover {
   color: #fff;
   background: var(--orange-color);
+}
+
+.list__item_button {
+  display: none;
+}
+
+.hamburger {
+  width: 32px;
+  height: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.5s linear;
+  position: relative;
+  display: none;
+}
+.hamburger_before,
+.hamburger_after {
+  background: #000;
+  height: 2px;
+  border-radius: 2px;
+  transition: all 0.5s linear;
+}
+.open .hamburger_before {
+  transform: translateY(4px) rotate(45deg);
+}
+
+.open .hamburger_after {
+  transform: translateY(-4px) rotate(-45deg);
+}
+
+@media screen and (max-width: 1080px) {
+  .navbar {
+    padding: 0 40px;
+  }
+  .logo {
+    max-width: 137px;
+    height: 25px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .navbar {
+    margin-top: 0;
+    padding: 0 16px;
+  }
+  .button {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .list {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 568px;
+    justify-content: start;
+    align-items: center;
+    padding-top: 66px;
+    transform: translateX(-150vh);
+    transition: all 0.5s linear;
+    background: #fff;
+  }
+  .show {
+    transform: translateX(0);
+  }
+  .list__item_button {
+    display: inline-block;
+  }
+  .button_mobile {
+    display: block;
+  }
+  .list__item {
+    margin-bottom: 20px;
+  }
+  .list__link {
+    color: #000;
+    font-size: 34px;
+    line-height: 39px;
+  }
+  .list__item:nth-child(5) {
+    margin-bottom: 70px;
+  }
+  .button_mobile {
+    background: var(--orange-color);
+    color: #fff;
+    outline: none;
+  }
 }
