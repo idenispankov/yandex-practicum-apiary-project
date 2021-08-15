@@ -86,27 +86,9 @@
 @media screen and (max-width: 700px) {
   .text__container {
     max-width: 100%;
-    /* max-width: 288px; */
     margin: 0 auto;
     margin-top: 32px;
   }
-  /* .text__container {
-    max-width: 100%;
-    max-width: 288px;
-    margin: 0 auto;
-    margin-top: 32px;
-  }
-  .heading {
-    font-size: var(--mobile-heading-font-size);
-    line-height: var(--mobile-heading-line-height);
-    text-align: start;
-  }
-  .linebreak {
-    display: block;
-  }
-  .image__container {
-    max-width: 320px;
-  } */
 }
 
 @media screen and (max-width: 601px) {
@@ -115,13 +97,8 @@
     padding-bottom: 60px;
   }
   .text__container {
-    max-width: 288px;
-    margin: 0 auto;
-    margin-top: 32px;
-  }
-  .text__container {
     max-width: 100%;
-    max-width: 288px;
+    max-width: 295px;
     margin: 0 auto;
     margin-top: 32px;
   }
@@ -138,5 +115,13 @@
   }
   .button_mobile {
     width: 288px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .text__container {
+    max-width: 288px;
+    margin: 0 auto;
+    margin-top: 32px;
   }
 }
