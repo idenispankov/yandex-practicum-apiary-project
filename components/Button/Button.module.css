@@ -1,5 +1,6 @@
 .button {
   color: #fff;
+  padding: 0;
   background: var(--orange-color);
   width: 293px;
   height: 70px;

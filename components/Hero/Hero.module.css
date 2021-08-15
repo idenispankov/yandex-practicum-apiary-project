@@ -76,6 +76,7 @@
   }
   .button {
     display: none;
+    width: 288px;
   }
   .button_mobile {
     display: inline-block;
@@ -134,5 +135,8 @@
   }
   .image__container {
     max-width: 320px;
+  }
+  .button_mobile {
+    width: 288px;
   }
 }

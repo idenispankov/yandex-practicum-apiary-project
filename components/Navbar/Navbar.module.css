@@ -148,6 +148,9 @@
     background: var(--orange-color);
     color: #fff;
     outline: none;
+    font-size: 24px;
+    line-height: 32px;
+    width: 288px;
   }
 }
 
