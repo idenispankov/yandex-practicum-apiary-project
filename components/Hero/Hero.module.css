@@ -115,6 +115,9 @@
 }
 
 @media screen and (max-width: 500px) {
+  .section {
+    max-height: 730px;
+  }
   .text__container {
     max-width: 318px;
     margin: 0 auto;
