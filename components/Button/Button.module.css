@@ -1,0 +1,16 @@
+.button {
+  color: #fff;
+  background: var(--orange-color);
+  width: 293px;
+  height: 70px;
+  border-radius: 40px;
+  border: 2px solid var(--orange-color);
+  font-size: 24px;
+  line-height: 32px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.button:hover {
+  transform: scale(1.03);
+}

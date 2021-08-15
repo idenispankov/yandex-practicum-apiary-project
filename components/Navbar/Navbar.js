@@ -5,7 +5,7 @@ import { useState } from 'react';
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header>
+    <header className={styles.header}>
       <nav className={styles.navbar}>
         <Link href='/'>
           <a>

@@ -1,0 +1,138 @@
+.section {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 80px 48px;
+  position: relative;
+  min-height: 638px;
+  box-sizing: border-box;
+}
+
+.text__container {
+  width: 620px;
+  margin-top: 160px;
+}
+
+.heading {
+  margin: 0;
+  font-size: var(--desktop-heading-font-size);
+  line-height: var(--desktop-heading-line-height);
+  margin-bottom: 60px;
+}
+
+.heading__span {
+  color: var(--orange-color);
+}
+
+.image__container {
+  width: 100%;
+  max-width: 542px;
+  position: absolute;
+  bottom: 48px;
+  right: 80px;
+}
+
+.button_mobile,
+.linebreak {
+  display: none;
+}
+
+@media screen and (max-width: 1280px) {
+  .text__container {
+    margin-top: 80px;
+  }
+  .image__container {
+    max-width: 442px;
+    bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .section {
+    padding: 0 40px 32px;
+  }
+  .image__container {
+    max-width: 366px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    min-height: 100%;
+    text-align: center;
+  }
+  .text__container {
+    margin: 0 auto;
+    margin-top: 32px;
+    margin-bottom: 30px;
+  }
+  .heading {
+    margin: 0;
+  }
+  .image__container {
+    position: static;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    max-width: 542px;
+  }
+  .button {
+    display: none;
+  }
+  .button_mobile {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .text__container {
+    max-width: 100%;
+    /* max-width: 288px; */
+    margin: 0 auto;
+    margin-top: 32px;
+  }
+  /* .text__container {
+    max-width: 100%;
+    max-width: 288px;
+    margin: 0 auto;
+    margin-top: 32px;
+  }
+  .heading {
+    font-size: var(--mobile-heading-font-size);
+    line-height: var(--mobile-heading-line-height);
+    text-align: start;
+  }
+  .linebreak {
+    display: block;
+  }
+  .image__container {
+    max-width: 320px;
+  } */
+}
+
+@media screen and (max-width: 601px) {
+  .section {
+    padding: 0;
+    padding-bottom: 60px;
+  }
+  .text__container {
+    max-width: 288px;
+    margin: 0 auto;
+    margin-top: 32px;
+  }
+  .text__container {
+    max-width: 100%;
+    max-width: 288px;
+    margin: 0 auto;
+    margin-top: 32px;
+  }
+  .heading {
+    font-size: var(--mobile-heading-font-size);
+    line-height: var(--mobile-heading-line-height);
+    text-align: start;
+  }
+  .linebreak {
+    display: block;
+  }
+  .image__container {
+    max-width: 320px;
+  }
+}
