@@ -97,10 +97,6 @@
 }
 
 @media screen and (max-width: 950px) {
-  .navbar {
-    margin-top: 0;
-    padding: 0 16px;
-  }
   .button {
     display: none;
   }
@@ -110,7 +106,7 @@
   .list {
     flex-direction: column;
     position: absolute;
-    top: 60px;
+    top: 87px;
     left: 0;
     margin: 0;
     width: 100%;
@@ -147,5 +143,15 @@
     background: var(--orange-color);
     color: #fff;
     outline: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    margin-top: 0;
+    padding: 0 16px;
+  }
+  .list {
+    top: 60px;
   }
 }
