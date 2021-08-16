@@ -1,7 +1,7 @@
 .footer {
   width: 100%;
   background: #000;
-  height: 280px;
+  min-height: 280px;
 }
 
 .footer__container {
@@ -10,22 +10,19 @@
   height: 280px;
   padding: 80px 80px 60px;
   color: #ddd;
-  font-size: 20px;
-  line-height: 30px;
 }
 
 .links__container {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  /* border-bottom: 1px solid red; */
 }
 
 .local__link {
   text-decoration: none;
   outline: none;
   font-size: 20px;
-  line-height: 150%;
+  line-height: 30px;
   color: #dddddd;
 }
 
@@ -55,6 +52,8 @@
 }
 
 .copyright {
+  font-size: 20px;
+  line-height: 30px;
   display: inline-block;
   margin: 0;
 }
@@ -62,7 +61,6 @@
 .card {
   border: none;
   width: 348px;
-  max-width: ;
   height: 92px;
   background: #fff;
   color: #000;
@@ -100,7 +98,6 @@
   left: 316px;
   bottom: 76px;
   margin-top: 29px;
-  /* display: none; */
   opacity: 0;
   visibility: hidden;
   transition: all 0.4s linear;
@@ -111,4 +108,80 @@
   margin: 0;
   font-size: 16px;
   line-height: 20px;
+}
+
+@media screen and (max-width: 1440px) {
+  .footer__container {
+    padding: 80px 40px 60px;
+    font-size: 18px;
+  }
+  .card__text {
+    font-size: 20px;
+  }
+  .card__popup {
+    max-width: 229px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .card__popup {
+    display: none;
+  }
+  .local__link {
+    font-size: 18px;
+  }
+  .copyright {
+    font-size: 18px;
+  }
+  .contact__info_list_item_link {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .footer__container {
+    height: 100%;
+    min-height: 522px;
+    padding-bottom: 40px;
+  }
+  .card__popup {
+    display: none;
+  }
+  .three_column__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact_info__list {
+    margin: 0;
+  }
+  .links__container {
+    margin-bottom: 60px;
+  }
+  .contact_info__list_item {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .contact_info__list_item:last-child {
+    margin-bottom: 60px;
+  }
+  .card {
+    margin-bottom: 20px;
+    padding: 16px 0;
+    height: 92px;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer__container {
+    padding: 40px 16px;
+  }
+  .card {
+    width: 300px;
+    min-height: 92px;
+    margin-bottom: 60px;
+  }
+  .card__text {
+    font-size: 18px;
+  }
 }

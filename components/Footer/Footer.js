@@ -15,7 +15,7 @@ export default function Footer() {
         </div>
         <div className={styles.three_column__container}>
           <ul className={styles.contact_info__list}>
-            <li>
+            <li className={styles.contact_info__list_item}>
               <a
                 className={styles.contact__info_list_item_link}
                 href='mailto:msgordienko@yandex-team.com'
@@ -23,7 +23,7 @@ export default function Footer() {
                 msgordienko@yandex-team.com
               </a>
             </li>
-            <li>
+            <li className={styles.contact_info__list_item}>
               <a
                 href='https://linkedin.com'
                 rel='noopener noreferrer'
@@ -33,7 +33,7 @@ export default function Footer() {
                 LinkedIn
               </a>
             </li>
-            <li>
+            <li className={styles.contact_info__list_item}>
               <a
                 className={styles.contact__info_list_item_link}
                 href='tel:510646625'
