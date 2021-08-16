@@ -164,7 +164,6 @@
   .list {
     top: 60px;
     height: 892px;
-    background-color: #ccc;
   }
 }
 @media screen and (max-width: 600px) {
