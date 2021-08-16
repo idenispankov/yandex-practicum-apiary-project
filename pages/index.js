@@ -15,7 +15,7 @@ export default function Home() {
           property='og:description'
           content='Your task. Done by data and web development students. For free!'
         />
-        <meta name='image' property='og:image' content='/images/og_image.png' />
+        <meta name='image' property='og:image' content='/og_image.png' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Hero />
