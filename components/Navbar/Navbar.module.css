@@ -177,3 +177,27 @@
     height: 700px;
   }
 }
+
+@media screen and (orientation: landscape) and (max-width: 850px) {
+  .list {
+    height: 718px;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 750px) {
+  .list {
+    height: 892px;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 670px) {
+  .list {
+    height: 862px;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 570px) {
+  .list {
+    height: 622px;
+  }
+}

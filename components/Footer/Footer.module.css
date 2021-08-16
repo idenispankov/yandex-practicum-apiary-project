@@ -125,7 +125,14 @@
 
 @media screen and (max-width: 1150px) {
   .card__popup {
-    display: none;
+    bottom: 0;
+    left: 0;
+    top: -117px;
+    min-width: 348px;
+    border-radius: 14px;
+  }
+  .card__popup_text {
+    padding: 16px;
   }
   .local__link {
     font-size: 18px;
@@ -145,7 +152,7 @@
     padding-bottom: 40px;
   }
   .card__popup {
-    display: none;
+    top: -122px;
   }
   .three_column__container {
     flex-direction: column;
@@ -183,5 +190,8 @@
   }
   .card__text {
     font-size: 18px;
+  }
+  .card__popup {
+    min-width: 300px;
   }
 }
