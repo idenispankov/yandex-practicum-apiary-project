@@ -3,7 +3,7 @@ import Button from '../Button/Button';
 import Image from 'next/image';
 import heroImage from '../../public/images/hero.png';
 
-export default function Hero() {
+export default function Hero({ setIsModalOpen, handleClick }) {
   return (
     <section className={styles.section}>
       <div className={styles.text__container}>
@@ -14,7 +14,11 @@ export default function Hero() {
           <br className={styles.linebreak} />{' '}
           <span className={styles.heading__span}>For free!</span>
         </h1>
-        <Button buttonStyles={styles.button} buttonText='Delegate a task' />
+        <Button
+          handleClick={() => setIsModalOpen(true)}
+          buttonStyles={styles.button}
+          buttonText='Delegate a task'
+        />
       </div>
       <div className={styles.image__container}>
         <Image
@@ -28,6 +32,8 @@ export default function Hero() {
       <Button
         buttonStyles={styles.button_mobile}
         buttonText='Delegate a task'
+        setIsModalOpen={setIsModalOpen}
+        handleClick={() => setIsModalOpen(true)}
       />
     </section>
   );

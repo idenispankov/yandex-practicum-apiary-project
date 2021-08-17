@@ -1,7 +1,12 @@
 import styles from './Button.module.css';
 
-export default function Button({ buttonStyles, buttonText }) {
+export default function Button({ buttonStyles, buttonText, handleClick }) {
   return (
-    <button className={`${styles.button} ${buttonStyles}`}>{buttonText}</button>
+    <button
+      onClick={handleClick}
+      className={`${styles.button} ${buttonStyles}`}
+    >
+      {buttonText}
+    </button>
   );
 }

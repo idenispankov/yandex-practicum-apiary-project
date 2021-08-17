@@ -2,8 +2,13 @@ import styles from './Navbar.module.css';
 import Link from 'next/link';
 import { useState } from 'react';
 
-export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+export default function Navbar({ setIsModalOpen }) {
+  const [isHamburgerMenuOpen, setIsHamburgerMenuOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
   return (
     <header className={styles.header}>
       <nav className={styles.navbar}>
@@ -11,51 +16,75 @@ export default function Navbar() {
           <a>
             <div
               className={styles.logo}
-              onClick={() => setIsOpen(!isOpen)}
+              onClick={() => setIsHamburgerMenuOpen(!isHamburgerMenuOpen)}
             ></div>
           </a>
         </Link>
-        <ul className={`${styles.list} ${isOpen && styles.show}`}>
-          <li className={styles.list__item} onClick={() => setIsOpen(!isOpen)}>
-            <Link href='#we-can-help'>
+        <ul className={`${styles.list} ${isHamburgerMenuOpen && styles.show}`}>
+          <li
+            className={styles.list__item}
+            onClick={() => setIsHamburgerMenuOpen(!isHamburgerMenuOpen)}
+          >
+            <Link href='#'>
               <a className={styles.list__link}>We can help!</a>
             </Link>
           </li>
-          <li className={styles.list__item} onClick={() => setIsOpen(!isOpen)}>
-            <Link href='#about'>
+          <li
+            className={styles.list__item}
+            onClick={() => setIsHamburgerMenuOpen(!isHamburgerMenuOpen)}
+          >
+            <Link href='#'>
               <a className={styles.list__link}>About</a>
             </Link>
           </li>
-          <li className={styles.list__item} onClick={() => setIsOpen(!isOpen)}>
-            <Link href='#how-to-start'>
+          <li
+            className={styles.list__item}
+            onClick={() => setIsHamburgerMenuOpen(!isHamburgerMenuOpen)}
+          >
+            <Link href='#'>
               <a className={styles.list__link}>How to start</a>
             </Link>
           </li>
-          <li className={styles.list__item} onClick={() => setIsOpen(!isOpen)}>
-            <Link href='#projects'>
+          <li
+            className={styles.list__item}
+            onClick={() => setIsHamburgerMenuOpen(!isHamburgerMenuOpen)}
+          >
+            <Link href='#'>
               <a className={styles.list__link}>Projects</a>
             </Link>
           </li>
-          <li className={styles.list__item} onClick={() => setIsOpen(!isOpen)}>
-            <Link href='#contacts'>
+          <li
+            className={styles.list__item}
+            onClick={() => setIsHamburgerMenuOpen(!isHamburgerMenuOpen)}
+          >
+            <Link href='#'>
               <a className={styles.list__link}>Contacts</a>
             </Link>
           </li>
           <li
             className={`${styles.list__item} ${styles.list__item_button}`}
-            onClick={() => setIsOpen(!isOpen)}
+            onClick={() => setIsHamburgerMenuOpen(!isHamburgerMenuOpen)}
           >
-            <button className={`${styles.button} ${styles.button_mobile}`}>
+            {/* Mobile Button */}
+            <button
+              onClick={() => openModal()}
+              className={`${styles.button} ${styles.button_mobile}`}
+            >
               Delegate a task
             </button>
           </li>
         </ul>
-        <button className={styles.button}>Delegate a task</button>
+        {/* Desktop Button */}
+        <button onClick={() => openModal()} className={styles.button}>
+          Delegate a task
+        </button>
 
         {/* Hamburger */}
         <div
-          className={`${styles.hamburger} ${isOpen && styles.open}`}
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={() => setIsHamburgerMenuOpen(!isHamburgerMenuOpen)}
+          className={`${styles.hamburger} ${
+            isHamburgerMenuOpen && styles.open
+          }`}
         >
           <div className={styles.hamburger_before}></div>
           <div className={styles.hamburger_after}></div>

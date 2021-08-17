@@ -1,7 +1,14 @@
 import Head from 'next/head';
 import Hero from '../components/Hero/Hero';
+import ModalWithForm from '../components/Modal/ModalWithForm';
+import Tooltip from '../components/Tooltip/Tooltip';
 
-export default function Home() {
+export default function Home({
+  isModalOpen,
+  setIsModalOpen,
+  tooltipOpen,
+  setTooltipOpen,
+}) {
   return (
     <>
       <Head>
@@ -18,7 +25,13 @@ export default function Home() {
         <meta name='image' property='og:image' content='/og_image.png' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <Hero />
+      <ModalWithForm
+        isModalOpen={isModalOpen}
+        setIsModalOpen={setIsModalOpen}
+        setTooltipOpen={setTooltipOpen}
+      />
+      <Tooltip tooltipOpen={tooltipOpen} setTooltipOpen={setTooltipOpen} />
+      <Hero isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
     </>
   );
 }
