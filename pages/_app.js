@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 function MyApp({ Component, pageProps }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [tooltipOpen, setTooltipOpen] = useState(true);
+  const [tooltipOpen, setTooltipOpen] = useState(false);
 
   return (
     <Layout setIsModalOpen={setIsModalOpen}>
