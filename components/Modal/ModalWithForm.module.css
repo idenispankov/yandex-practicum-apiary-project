@@ -172,10 +172,3 @@
     margin-top: 150px;
   }
 }
-
-@media screen and (max-width: 320px) {
-  .form {
-    /* min-height: 754px;
-    margin-top: 210px; */
-  }
-}
