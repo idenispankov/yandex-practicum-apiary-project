@@ -6,7 +6,7 @@
   max-width: 1440px;
   margin: 0 auto;
   padding: 100px 80px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .section__heading {
@@ -17,7 +17,7 @@
 }
 
 .columns__container {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   justify-content: space-between;
   margin-bottom: 100px;
@@ -118,4 +118,19 @@
 .button {
   display: block;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1439px) {
+  .section__container {
+    padding: 100px 40px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .card {
+    width: 432px;
+  }
+  .card__text {
+    padding: 0;
+  }
 }
