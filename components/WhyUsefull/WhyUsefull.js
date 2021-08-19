@@ -17,7 +17,6 @@ function WhyUsefull() {
         </p>
         <div className={styles.card__container}>
           <Card
-            cardStyles={styles.card}
             cardImage={resourceImage}
             cardAlt=''
             cardHeading='Recource saving'

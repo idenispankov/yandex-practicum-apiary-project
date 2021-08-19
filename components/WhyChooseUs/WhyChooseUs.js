@@ -1,40 +1,39 @@
+/* eslint-disable react/no-unescaped-entities */
 import styles from './WhyChooseUs.module.css';
 import Card from '../Card/Card';
-import resourceImage from '../../public/images/resource.svg';
-import publicizeImage from '../../public/images/publicize.svg';
-import boostImage from '../../public/images/prboost.svg';
+import qualityImage from '../../public/images/quality.svg';
+import professionalismImage from '../../public/images/professionalism.svg';
+import experienceImage from '../../public/images/experience.svg';
 
 export default function WhyChooseUs() {
   return (
     <section className={styles.section}>
       <div className={styles.section__container}>
-        <h2 className={styles.section__heading}>
-          Why is it useful for your company?
-        </h2>
+        <h2 className={styles.section__heading}>Why choose us?</h2>
         <p className={styles.section__subheading}>
-          By handing over assignments to students for work, you free experienced
-          employees from routine tasks, as well as increase brand awareness.
+          We have built the largest IT company in Russia. We know how to develop
+          cool employees, and we work hard to make our clients' lives better and
+          happier.
         </p>
         <div className={styles.card__container}>
           <Card
-            cardStyles={styles.card}
-            cardImage={resourceImage}
+            cardImage={qualityImage}
             cardAlt=''
-            cardHeading='Recource saving'
-            cardText='Delegate tasks for free and get results that can be used in your future work.'
+            cardHeading='Quality'
+            cardText='The Yandex search engine is the fourth ranked search engine in the world in terms of number of requests processed.'
           />
           <div className={styles.two_cards__container}>
             <Card
-              cardImage={publicizeImage}
+              cardImage={professionalismImage}
               cardAlt=''
-              cardHeading='Publicize'
-              cardText='We take pride in the real-world value of the tasks that our students perform and we share them in all available channels.'
+              cardHeading='Professionalism'
+              cardText='Practicum by Yandex is one of the most popular online education services in Russia, allowing students to get a new profession or master a new skill.'
             />
             <Card
-              cardImage={boostImage}
+              cardImage={experienceImage}
               cardAlt=''
-              cardHeading='PR Boost'
-              cardText='This will increase the visibility of the company among job seekers and attract those who share the values of your company.'
+              cardHeading='Experience'
+              cardText='Our students are already working at Accenture, Tesla, Invitae. Our specialty is practical training for the real world.'
             />
           </div>
         </div>
