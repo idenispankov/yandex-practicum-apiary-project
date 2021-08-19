@@ -14,7 +14,13 @@ function Card({
   return (
     <div className={`${styles.card} ${cardStyles}`}>
       <div className={`${styles.card__image} ${cardImageStyles}`}>
-        <Image src={cardImage} alt={cardAlt} width={400} layout='fixed' />
+        <Image
+          src={cardImage}
+          alt={cardAlt}
+          width={400}
+          height={202}
+          layout='fixed'
+        />
       </div>
       <h3 className={`${styles.card__heading} ${cardHeadingStyles}`}>
         {cardHeading}

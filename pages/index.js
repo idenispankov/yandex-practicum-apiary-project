@@ -3,7 +3,8 @@ import Hero from '../components/Hero/Hero';
 import ModalWithForm from '../components/Modal/ModalWithForm';
 import Tooltip from '../components/Tooltip/Tooltip';
 import WhyUsefull from '../components/WhyUsefull/WhyUsefull';
-import CanWeHelp from '../components/CanWeHelp/CanWeHelp';
+// import CanWeHelp from '../components/CanWeHelp/CanWeHelp';
+import WhyChooseUs from '../components/WhyChooseUs/WhyChooseUs';
 
 export default function Home({
   isModalOpen,
@@ -29,7 +30,8 @@ export default function Home({
       </Head>
       <Hero isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
       <WhyUsefull />
-      <CanWeHelp />
+      {/* <CanWeHelp /> */}
+      <WhyChooseUs />
       <ModalWithForm
         isModalOpen={isModalOpen}
         setIsModalOpen={setIsModalOpen}
