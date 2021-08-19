@@ -1,5 +1,4 @@
 import styles from './WhyUsefull.module.css';
-import SectionWrapper from '../SectionWrapper/SectionWrapper';
 import Card from '../Card/Card';
 import resourceImage from '../../public/images/resource.svg';
 import publicizeImage from '../../public/images/publicize.svg';

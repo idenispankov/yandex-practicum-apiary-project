@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* border: 1px solid red; */
 }
 
 .card__heading {
@@ -26,8 +25,6 @@
   height: 202px;
   background: transparent;
   margin-bottom: 32px;
-  /* border: 1px solid red; */
-  /* background: beige; */
 }
 
 @media screen and (max-width: 1439px) {
@@ -54,6 +51,5 @@
   }
   .card__image {
     width: 320px;
-    /* margin-bottom: 32px; */
   }
 }
