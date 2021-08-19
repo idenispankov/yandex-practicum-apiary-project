@@ -35,8 +35,8 @@ export default function RequestsWeHelpWith() {
           <div className={styles.two_cards__container}>
             <Link href='/data-analysis'>
               <a className={styles.card}>
-                <p className={`${styles.card__hash}`}>#programming</p>
-                <h3 className={`${styles.card__heading}`}>Web development</h3>
+                <p className={`${styles.card__hash}`}>#analysis</p>
+                <h3 className={`${styles.card__heading}`}>Data analysis</h3>
                 <div className={`${styles.card__image}`}>
                   <Image
                     src={dataAnalysisImage}
@@ -50,8 +50,8 @@ export default function RequestsWeHelpWith() {
             </Link>
             <Link href='/data-science'>
               <a className={styles.card}>
-                <p className={`${styles.card__hash}`}>#programming</p>
-                <h3 className={`${styles.card__heading}`}>Web development</h3>
+                <p className={`${styles.card__hash}`}>#analysis</p>
+                <h3 className={`${styles.card__heading}`}>Data science</h3>
                 <div className={`${styles.card__image}`}>
                   <Image
                     src={dataScienceImage}
