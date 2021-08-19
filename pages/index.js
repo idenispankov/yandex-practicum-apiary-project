@@ -32,7 +32,7 @@ export default function Home({
       <Hero setIsModalOpen={setIsModalOpen} />
       <UseFullForYourCompany />
       <RequestsWeHelpWith />
-      {/* <WhyChooseUs /> */}
+      <WhyChooseUs />
       <MessagesSection setIsModalOpen={setIsModalOpen} />
       <ModalWithForm
         isModalOpen={isModalOpen}
