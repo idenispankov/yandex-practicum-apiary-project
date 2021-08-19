@@ -3,7 +3,7 @@ import Button from '../Button/Button';
 import Image from 'next/image';
 import heroImage from '../../public/images/hero.png';
 
-export default function Hero({ setIsModalOpen, handleClick }) {
+export default function Hero({ setIsModalOpen }) {
   return (
     <section className={styles.section}>
       <div className={styles.text__container}>

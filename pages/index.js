@@ -5,6 +5,7 @@ import Tooltip from '../components/Tooltip/Tooltip';
 import RequestsWeHelpWith from '../components/RequestsWeHelpWith/RequestsWeHelpWith';
 import UseFullForYourCompany from '../components/UsefullForYourCompany/UseFullForYourCompany';
 import WhyChooseUs from '../components/WhyChooseUs/WhyChooseUs';
+import MessagesSection from '../components/MessagesSection/MessagesSection';
 
 export default function Home({
   isModalOpen,
@@ -28,10 +29,11 @@ export default function Home({
         <meta name='image' property='og:image' content='/og_image.png' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <Hero isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
+      <Hero setIsModalOpen={setIsModalOpen} />
       <UseFullForYourCompany />
       <RequestsWeHelpWith />
-      <WhyChooseUs />
+      {/* <WhyChooseUs /> */}
+      <MessagesSection setIsModalOpen={setIsModalOpen} />
       <ModalWithForm
         isModalOpen={isModalOpen}
         setIsModalOpen={setIsModalOpen}
