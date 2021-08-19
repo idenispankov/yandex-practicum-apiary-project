@@ -11,13 +11,27 @@ export default function HowToStart({ setIsModalOpen }) {
           <div className={styles.first_column__container}>
             <div className={styles.card}>
               <div className={styles.first__image} />
+              <p className={styles.card__number}>1</p>
               <h3 className={styles.card__heading}>Fill in the checklist</h3>
               <p className={`${styles.card__text} ${styles.first_card__text}`}>
                 So that we can understand your request and how we can help you
               </p>
             </div>
+            <div className={`${styles.card} ${styles.card__mobile}`}>
+              <div className={styles.third__image} />
+              <p className={styles.card__number}>2</p>
+              <h3 className={styles.card__heading}>
+                We will clarify the details and connect the necessary experts
+              </h3>
+              <p className={`${styles.card__text} ${styles.last_card__text}`}>
+                We will help you formulate the request so that it's
+                understandable to our students, and you will receive a
+                high-quality solution in a timely manner
+              </p>
+            </div>
             <div className={styles.card}>
               <div className={styles.second__image} />
+              <p className={styles.card__number}>3</p>
               <h3 className={styles.card__heading}>
                 We will start solving your tasks
               </h3>
@@ -37,8 +51,9 @@ export default function HowToStart({ setIsModalOpen }) {
             <p className={styles.middle_column_numbers}>3</p>
           </div>
           <div className={styles.last_column__container}>
-            <div className={styles.card}>
+            <div className={`${styles.card} ${styles.card__desktop}`}>
               <div className={styles.third__image} />
+              <p className={styles.card__number}>3</p>
               <h3 className={styles.card__heading}>
                 We will clarify the details and connect the necessary experts
               </h3>
