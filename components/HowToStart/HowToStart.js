@@ -2,7 +2,7 @@
 import styles from './HowToStart.module.css';
 import Button from '../Button/Button';
 
-export default function HowToStart() {
+export default function HowToStart({ setIsModalOpen }) {
   return (
     <section className={styles.section}>
       <div className={styles.section__container}>
@@ -30,11 +30,11 @@ export default function HowToStart() {
             </div>
           </div>
           <div className={styles.middle_column__container}>
-            <p>1</p>
+            <p className={styles.middle_column_numbers}>1</p>
             <div className={styles.line} />
-            <p>2</p>
+            <p className={styles.middle_column_numbers}>2</p>
             <div className={styles.line} />
-            <p>3</p>
+            <p className={styles.middle_column_numbers}>3</p>
           </div>
           <div className={styles.last_column__container}>
             <div className={styles.card}>
@@ -50,7 +50,12 @@ export default function HowToStart() {
             </div>
           </div>
         </div>
-        <Button buttonText='Delegate a task' buttonStyles={styles.button} />
+        <Button
+          buttonStyles={styles.button}
+          buttonText='Delegate a task'
+          setIsModalOpen={setIsModalOpen}
+          handleClick={() => setIsModalOpen(true)}
+        />
       </div>
     </section>
   );

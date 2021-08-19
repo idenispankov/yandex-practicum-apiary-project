@@ -36,6 +36,19 @@
   align-items: center;
 }
 
+.middle_column_numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  line-height: 30px;
+  border-radius: 50%;
+  color: #fff;
+  height: 40px;
+  width: 40px;
+  background: var(--orange-color);
+}
+
 .card {
   width: 579px;
   display: flex;
@@ -98,7 +111,7 @@
 .line {
   height: 134px;
   width: 2px;
-  background: #000;
+  background: #616161;
   margin: 10px 0;
 }
 
