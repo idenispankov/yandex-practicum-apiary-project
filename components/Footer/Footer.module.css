@@ -83,6 +83,8 @@
 .card__text {
   margin: 0;
   text-align: center;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .card__popup {
@@ -114,9 +116,6 @@
   .footer__container {
     padding: 80px 40px 60px;
     font-size: 18px;
-  }
-  .card__text {
-    font-size: 20px;
   }
   .card__popup {
     max-width: 229px;
