@@ -30,10 +30,10 @@ export default function Home({
         <meta name='image' property='og:image' content='/og_image.png' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      {/* <Hero setIsModalOpen={setIsModalOpen} />
+      <Hero setIsModalOpen={setIsModalOpen} />
       <UseFullForYourCompany />
       <RequestsWeHelpWith />
-      <WhyChooseUs /> */}
+      <WhyChooseUs />
       <MessagesSection setIsModalOpen={setIsModalOpen} />
       <HowToStart setIsModalOpen={setIsModalOpen} />
       <ModalWithForm
