@@ -1,0 +1,108 @@
+.section {
+  background: #fff;
+}
+
+.section__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 100px 80px;
+  border: 1px solid red;
+}
+
+.section__heading {
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  margin-bottom: 21px;
+}
+
+.columns__container {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.last_column__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle_column__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 579px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: beige;
+  margin-bottom: 54px;
+}
+
+.card:last-child {
+  margin-bottom: 0;
+}
+
+.first__image {
+  background: url('../../public/images/checklist.svg') no-repeat center;
+  width: 534px;
+  height: 186px;
+  margin-bottom: 20px;
+}
+
+.second__image {
+  background: url('../../public/images/bee.svg') no-repeat center;
+  width: 534px;
+  height: 186px;
+  margin-bottom: 20px;
+}
+
+.third__image {
+  background: url('../../public/images/details.svg') no-repeat center;
+  width: 534px;
+  height: 186px;
+  margin-bottom: 20px;
+}
+
+.card__heading {
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.card__text {
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  max-width: 579px;
+  padding: 0 5px;
+  color: #616161;
+}
+
+.first_card__text {
+  padding: 0 50px;
+}
+
+.last_card__text {
+  padding: 0 20px;
+}
+
+.line {
+  height: 134px;
+  width: 2px;
+  background: #000;
+  margin: 10px 0;
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
+}
