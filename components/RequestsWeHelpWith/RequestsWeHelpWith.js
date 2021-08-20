@@ -7,7 +7,7 @@ import dataScienceImage from '../../public/images/data-science.svg';
 
 export default function RequestsWeHelpWith() {
   return (
-    <section className={styles.section}>
+    <section id='we-can-help' className={styles.section}>
       <div className={styles.section__container}>
         <h2 className={styles.section__heading}>
           What requests can we help with?

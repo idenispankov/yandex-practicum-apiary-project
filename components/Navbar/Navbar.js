@@ -25,7 +25,7 @@ export default function Navbar({ setIsModalOpen }) {
             className={styles.list__item}
             onClick={() => setIsHamburgerMenuOpen(!isHamburgerMenuOpen)}
           >
-            <Link href='#'>
+            <Link href='#we-can-help'>
               <a className={styles.list__link}>We can help!</a>
             </Link>
           </li>
@@ -33,7 +33,7 @@ export default function Navbar({ setIsModalOpen }) {
             className={styles.list__item}
             onClick={() => setIsHamburgerMenuOpen(!isHamburgerMenuOpen)}
           >
-            <Link href='#'>
+            <Link href='#about'>
               <a className={styles.list__link}>About</a>
             </Link>
           </li>
@@ -41,7 +41,7 @@ export default function Navbar({ setIsModalOpen }) {
             className={styles.list__item}
             onClick={() => setIsHamburgerMenuOpen(!isHamburgerMenuOpen)}
           >
-            <Link href='#'>
+            <Link href='#how-to-start'>
               <a className={styles.list__link}>How to start</a>
             </Link>
           </li>
@@ -57,7 +57,7 @@ export default function Navbar({ setIsModalOpen }) {
             className={styles.list__item}
             onClick={() => setIsHamburgerMenuOpen(!isHamburgerMenuOpen)}
           >
-            <Link href='#'>
+            <Link href='#contacts'>
               <a className={styles.list__link}>Contacts</a>
             </Link>
           </li>

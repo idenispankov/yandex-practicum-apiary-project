@@ -4,7 +4,7 @@ import Button from '../Button/Button';
 
 export default function HowToStart({ setIsModalOpen }) {
   return (
-    <section className={styles.section}>
+    <section id='how-to-start' className={styles.section}>
       <div className={styles.section__container}>
         <h2 className={styles.section__heading}>How to start?</h2>
         <div className={styles.columns__container}>

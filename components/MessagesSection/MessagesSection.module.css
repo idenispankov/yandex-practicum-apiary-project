@@ -1,11 +1,13 @@
 .section {
   background: #e5e5e5;
+  padding-bottom: 100px;
 }
 
 .section__container {
   max-width: 1440px;
   margin: 0 auto;
   padding: 100px 80px;
+  padding-bottom: 0;
   padding-left: 170px;
 }
 
@@ -69,6 +71,7 @@
 @media screen and (max-width: 1024px) {
   .section__container {
     padding: 100px 40px;
+    padding-bottom: 0;
     padding-left: 99px;
   }
   .message {
@@ -80,8 +83,12 @@
 }
 
 @media screen and (max-width: 600px) {
+  .section {
+    padding-bottom: 60px;
+  }
   .section__container {
     padding: 60px 16px;
+    padding-bottom: 0;
   }
   .message__avatar {
     display: none;

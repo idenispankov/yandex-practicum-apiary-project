@@ -30,7 +30,7 @@ export default function Home() {
         <meta name='image' property='og:image' content='/og_image.png' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <Navbar isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
+      <Navbar setIsModalOpen={setIsModalOpen} />
       <Hero setIsModalOpen={setIsModalOpen} />
       <UseFullForYourCompany />
       <RequestsWeHelpWith />

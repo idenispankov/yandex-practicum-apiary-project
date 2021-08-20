@@ -4,7 +4,7 @@ import Button from '../Button/Button';
 
 export default function MessagesSection({ setIsModalOpen }) {
   return (
-    <section className={styles.section}>
+    <section id='about' className={styles.section}>
       <div className={styles.section__container}>
         <h2 className={styles.section__heading}>
           What is Practicum by Yandex?
@@ -47,13 +47,13 @@ export default function MessagesSection({ setIsModalOpen }) {
         <div className={styles.question__container}>
           <p className={styles.question}>Wow! I'm ready to start!</p>
         </div>
-        <Button
-          buttonStyles={styles.button}
-          buttonText='Delegate a task'
-          setIsModalOpen={setIsModalOpen}
-          handleClick={() => setIsModalOpen(true)}
-        />
       </div>
+      <Button
+        buttonStyles={styles.button}
+        buttonText='Delegate a task'
+        setIsModalOpen={setIsModalOpen}
+        handleClick={() => setIsModalOpen(true)}
+      />
     </section>
   );
 }
