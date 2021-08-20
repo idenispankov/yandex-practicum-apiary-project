@@ -1,4 +1,6 @@
 import Head from 'next/head';
+import { useState } from 'react';
+import Navbar from '../components/Navbar/Navbar';
 import Hero from '../components/Hero/Hero';
 import ModalWithForm from '../components/Modal/ModalWithForm';
 import Tooltip from '../components/Tooltip/Tooltip';
@@ -8,12 +10,10 @@ import WhyChooseUs from '../components/WhyChooseUs/WhyChooseUs';
 import MessagesSection from '../components/MessagesSection/MessagesSection';
 import HowToStart from '../components/HowToStart/HowToStart';
 
-export default function Home({
-  isModalOpen,
-  setIsModalOpen,
-  tooltipOpen,
-  setTooltipOpen,
-}) {
+export default function Home() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [tooltipOpen, setTooltipOpen] = useState(false);
+
   return (
     <>
       <Head>
@@ -30,6 +30,7 @@ export default function Home({
         <meta name='image' property='og:image' content='/og_image.png' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
+      <Navbar isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
       <Hero setIsModalOpen={setIsModalOpen} />
       <UseFullForYourCompany />
       <RequestsWeHelpWith />

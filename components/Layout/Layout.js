@@ -1,11 +1,8 @@
-import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
-import { useState } from 'react';
 
-export default function Layout({ children, setIsModalOpen }) {
+export default function Layout({ children }) {
   return (
     <>
-      <Navbar setIsModalOpen={setIsModalOpen} />
       <div>
         <main>{children}</main>
       </div>
