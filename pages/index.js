@@ -9,6 +9,7 @@ import UseFullForYourCompany from '../components/UsefullForYourCompany/UseFullFo
 import WhyChooseUs from '../components/WhyChooseUs/WhyChooseUs';
 import MessagesSection from '../components/MessagesSection/MessagesSection';
 import HowToStart from '../components/HowToStart/HowToStart';
+import Projects from '../components/Projects/Projects';
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -31,12 +32,13 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Navbar setIsModalOpen={setIsModalOpen} />
-      <Hero setIsModalOpen={setIsModalOpen} />
+      {/* <Hero setIsModalOpen={setIsModalOpen} />
       <UseFullForYourCompany />
       <RequestsWeHelpWith />
-      <WhyChooseUs />
       <MessagesSection setIsModalOpen={setIsModalOpen} />
-      <HowToStart setIsModalOpen={setIsModalOpen} />
+      <HowToStart setIsModalOpen={setIsModalOpen} /> */}
+      <Projects />
+      <WhyChooseUs />
       <ModalWithForm
         isModalOpen={isModalOpen}
         setIsModalOpen={setIsModalOpen}

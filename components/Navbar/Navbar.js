@@ -16,7 +16,7 @@ export default function Navbar({ setIsModalOpen }) {
           <a>
             <div
               className={styles.logo}
-              onClick={() => setIsHamburgerMenuOpen(!isHamburgerMenuOpen)}
+              onClick={() => setIsHamburgerMenuOpen(false)}
             ></div>
           </a>
         </Link>
