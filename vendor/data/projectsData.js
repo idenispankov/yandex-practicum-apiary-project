@@ -1,0 +1,85 @@
+const ProjectsData = [
+  {
+    id: 1,
+    projectName: 'Ant Robotics',
+    projectDescription:
+      'Landing page website for the company that cakes automated logistics robots from Oakland, CA',
+    projectImageSrc: '/images/ant_robotics.png',
+    projectImageAlt: 'Ant robotics landing page',
+    projectDate: 'May 2021',
+    projectWebsiteLink: 'https://google.com',
+    projectWebsiteText: 'Visit website &rarr;',
+    ownerImageSrc: '/images/ant_robotics.png',
+    ownerImageAlt: 'some name',
+    ownerName: 'Maxim Antonenko',
+    ownerTitle: 'Ant Robotics CEO',
+    ownerReview:
+      '“The Data Analytics students have highlighted a few languages which show a growing demand for translation and expanded our list of keywords to detect more translation-related user reviews,” Demid said. “The Data Science students tested a wide range of natural language processing algorithms, including deep machine learning...',
+    ownerFullReviewLink: 'https://google.com',
+    firstStudentImageSrc: '/images/ant_robotics.png',
+    firstStudentImageAlt: 'some name',
+    secondStudentImageSrc: '/images/ant_robotics.png',
+    secondStudentImageAlt: 'some name',
+    thirdStudentImageSrc: '/images/ant_robotics.png',
+    thirdStudentImageAlt: 'some name',
+    studentsNames: 'Maria Wright, Maria Wright, Enyel Sequeira',
+    studentsReviewText:
+      '“I learned so much from it,” Xia said. “Not just about new packages and methods of analysis and reporting, but also workflow management, how to clarify task requirements, collaborate with others, and more. Those are the kind of experiences I can put on my resume, and that’s awesome too.”',
+  },
+  {
+    id: 2,
+    projectName: 'Prim-U',
+    projectDescription:
+      'Main entry page for the first on-demand beauty platform from the South Africa',
+    projectImageSrc: '/images/prim-u.png',
+    projectImageAlt: 'Prim-U landing page',
+    projectDate: 'May 2021',
+    projectWebsiteLink: 'https://google.com',
+    projectWebsiteText: 'Visit website &rarr;',
+    ownerImageSrc: '/images/ant_robotics.png',
+    ownerImageAlt: 'some name',
+    ownerName: 'Maxim Antonenko',
+    ownerTitle: 'Ant Robotics CEO',
+    ownerReview:
+      '“Employee performance reviews are key to offering helpful feedback to managers and employees. But not knowing what to say or write can make the process downright painful — especially when you’re on a deadline. If you do annual performance reviews, it is important to get it right. This is key to boosting employee engagement.”',
+    ownerFullReviewLink: 'https://google.com',
+    firstStudentImageSrc: '/images/ant_robotics.png',
+    firstStudentImageAlt: 'some name',
+    secondStudentImageSrc: '/images/ant_robotics.png',
+    secondStudentImageAlt: 'some name',
+    thirdStudentImageSrc: '/images/ant_robotics.png',
+    thirdStudentImageAlt: 'some name',
+    studentsNames: 'Maria Wright, Maria Wright, Enyel Sequeira',
+    studentsReviewText:
+      '“Employee performance reviews are key to offering helpful feedback to managers and employees. But not knowing what to say or write can make the process downright painful — especially when you’re on a deadline. If you do annual performance reviews, it is important to get it right. This is key to boosting employee engagement.”',
+  },
+  {
+    id: 3,
+    projectName: 'Ant Robotics',
+    projectDescription:
+      'Landing page website for the company that cakes automated logistics robots from Oakland, CA',
+    projectImageSrc: '/images/ant_robotics.png',
+    projectImageAlt: 'Ant robotics landing page',
+    projectDate: 'May 2021',
+    projectWebsiteLink: 'https://google.com',
+    projectWebsiteText: 'Visit website &rarr;',
+    ownerImageSrc: '/images/ant_robotics.png',
+    ownerImageAlt: 'some name',
+    ownerName: 'Maxim Antonenko',
+    ownerTitle: 'Ant Robotics CEO',
+    ownerReview:
+      '“The Data Analytics students have highlighted a few languages which show a growing demand for translation and expanded our list of keywords to detect more translation-related user reviews,” Demid said. “The Data Science students tested a wide range of natural language processing algorithms, including deep machine learning...',
+    ownerFullReviewLink: 'https://google.com',
+    firstStudentImageSrc: '/images/ant_robotics.png',
+    firstStudentImageAlt: 'some name',
+    secondStudentImageSrc: '/images/ant_robotics.png',
+    secondStudentImageAlt: 'some name',
+    thirdStudentImageSrc: '/images/ant_robotics.png',
+    thirdStudentImageAlt: 'some name',
+    studentsNames: 'Maria Wright, Maria Wright, Enyel Sequeira',
+    studentsReviewText:
+      '“I learned so much from it,” Xia said. “Not just about new packages and methods of analysis and reporting, but also workflow management, how to clarify task requirements, collaborate with others, and more. Those are the kind of experiences I can put on my resume, and that’s awesome too.”',
+  },
+];
+
+export default ProjectsData;
