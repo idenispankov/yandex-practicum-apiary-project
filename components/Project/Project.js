@@ -27,8 +27,9 @@ export default function Project({
   return (
     <>
       <div className={styles.project}>
-        <div className={styles.project__image}>
+        <div className={styles.project__image_container}>
           <Image
+            className={styles.project__image}
             src={projectImageSrc}
             alt={projectImageAlt}
             layout='responsive'

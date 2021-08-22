@@ -7,10 +7,14 @@
   border-radius: 14px;
 }
 
-.project__image {
+.project__image_container {
   background: url('../../public/images/ant_robotics.png');
   width: 630px;
   height: 365px;
+  border-radius: 14px;
+}
+
+.project__image {
   border-radius: 14px;
 }
 
