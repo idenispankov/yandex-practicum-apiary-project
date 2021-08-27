@@ -38,8 +38,10 @@ export default function Project({
           />
         </div>
         <div className={styles.project_text__container}>
-          <h3 className={styles.project__heading}>{projectName}</h3>
-          <p className={styles.project__text}>{projectDescription}</p>
+          <div>
+            <h3 className={styles.project__heading}>{projectName}</h3>
+            <p className={styles.project__text}>{projectDescription}</p>
+          </div>
           <div className={styles.project_text__container_footer}>
             <p className={styles.footer__text}>{projectDate}</p>
             <a className={styles.footer__link} href={projectWebsiteLink}>

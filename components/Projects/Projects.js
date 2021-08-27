@@ -1,30 +1,40 @@
 import styles from './Projects.module.css';
 import Button from '../Button/Button';
-import ProjectsData from '../../vendor/data/projectsData';
+import projectsData from '../../vendor/data/projectsData';
 import Project from '../Project/Project';
 import { useState } from 'react';
+
+const PROJECTS = {
+  web: 'web',
+  analysis: 'analysis',
+  science: 'science',
+};
 
 export default function Projects({ setIsModalOpen }) {
   const [webDevelopment, setWebDevelopment] = useState(true);
   const [dataAnalysis, setDataAnalysis] = useState(false);
   const [dataScience, setDataScience] = useState(false);
+  const [active, setActive] = useState(PROJECTS.web);
 
   const handleWebDevelopmentClick = () => {
     setDataAnalysis(false);
     setDataScience(false);
     setWebDevelopment(true);
+    setActive('web');
   };
 
   const handleDataAnalysisClick = () => {
     setDataScience(false);
     setWebDevelopment(false);
     setDataAnalysis(true);
+    setActive('analysis');
   };
 
   const handleDataScienceClick = () => {
     setDataAnalysis(false);
     setWebDevelopment(false);
     setDataScience(true);
+    setActive('science');
   };
 
   return (
@@ -42,57 +52,54 @@ export default function Projects({ setIsModalOpen }) {
           <Button
             handleClick={handleWebDevelopmentClick}
             buttonStyles={`${styles.button} ${
-              webDevelopment && styles.button_active
+              active === 'web' && styles.button_active
             }`}
             buttonText='Web development'
           />
           <Button
             handleClick={handleDataAnalysisClick}
             buttonStyles={`${styles.button} ${
-              dataAnalysis && styles.button_active
+              active === 'analysis' && styles.button_active
             }`}
             buttonText='Data analysis'
           />
           <Button
             handleClick={handleDataScienceClick}
             buttonStyles={`${styles.button} ${
-              dataScience && styles.button_active
+              active === 'science' && styles.button_active
             }`}
             buttonText='Data science'
           />
         </div>
         <ul className={styles.projecs__container}>
-          {ProjectsData.map((item) => {
-            if (item.id > 2) return;
-            else {
-              return (
-                <li key={item.id} className={styles.project__container_item}>
-                  <Project
-                    projectName={item.projectName}
-                    projectDescription={item.projectDescription}
-                    projectImageSrc={item.projectImageSrc}
-                    projectImageAlt={item.projectImageAlt}
-                    projectDate={item.projectDate}
-                    projectWebsiteLink={item.projectWebsiteLink}
-                    projectWebsiteText={item.projectWebsiteText}
-                    ownerImageSrc={item.ownerImageSrc}
-                    ownerImageAlt={item.ownerImageAlt}
-                    ownerName={item.ownerName}
-                    ownerTitle={item.ownerTitle}
-                    ownerReview={item.ownerReview}
-                    ownerFullReviewLink={item.ownerFullReviewLink}
-                    firstStudentImageSrc={item.firstStudentImageSrc}
-                    firstStudentImageAlt={item.firstStudentImageAlt}
-                    secondStudentImageSrc={item.secondStudentImageSrc}
-                    secondStudentImageAlt={item.secondStudentImageAlt}
-                    thirdStudentImageSrc={item.thirdStudentImageSrc}
-                    thirdStudentImageAlt={item.thirdStudentImageAlt}
-                    studentsNames={item.studentsNames}
-                    studentsReviewText={item.studentsReviewText}
-                  />
-                </li>
-              );
-            }
+          {projectsData[active].map((item) => {
+            return (
+              <li key={item.id} className={styles.project__container_item}>
+                <Project
+                  projectName={item.projectName}
+                  projectDescription={item.projectDescription}
+                  projectImageSrc={item.projectImageSrc}
+                  projectImageAlt={item.projectImageAlt}
+                  projectDate={item.projectDate}
+                  projectWebsiteLink={item.projectWebsiteLink}
+                  projectWebsiteText={item.projectWebsiteText}
+                  ownerImageSrc={item.ownerImageSrc}
+                  ownerImageAlt={item.ownerImageAlt}
+                  ownerName={item.ownerName}
+                  ownerTitle={item.ownerTitle}
+                  ownerReview={item.ownerReview}
+                  ownerFullReviewLink={item.ownerFullReviewLink}
+                  firstStudentImageSrc={item.firstStudentImageSrc}
+                  firstStudentImageAlt={item.firstStudentImageAlt}
+                  secondStudentImageSrc={item.secondStudentImageSrc}
+                  secondStudentImageAlt={item.secondStudentImageAlt}
+                  thirdStudentImageSrc={item.thirdStudentImageSrc}
+                  thirdStudentImageAlt={item.thirdStudentImageAlt}
+                  studentsNames={item.studentsNames}
+                  studentsReviewText={item.studentsReviewText}
+                />
+              </li>
+            );
           })}
         </ul>
         <div className={styles.footer__buttons_container}>
