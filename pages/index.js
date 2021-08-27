@@ -32,13 +32,13 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Navbar setIsModalOpen={setIsModalOpen} />
-      {/* <Hero setIsModalOpen={setIsModalOpen} />
+      <Hero setIsModalOpen={setIsModalOpen} />
       <UseFullForYourCompany />
       <RequestsWeHelpWith />
       <MessagesSection setIsModalOpen={setIsModalOpen} />
-      <HowToStart setIsModalOpen={setIsModalOpen} /> */}
+      <HowToStart setIsModalOpen={setIsModalOpen} />
       <Projects setIsModalOpen={setIsModalOpen} />
-      {/* <WhyChooseUs /> */}
+      <WhyChooseUs />
       <ModalWithForm
         isModalOpen={isModalOpen}
         setIsModalOpen={setIsModalOpen}

@@ -28,6 +28,7 @@ export default function Projects({ setIsModalOpen }) {
   return (
     <section className={styles.section}>
       <div className={styles.section__container}>
+        <div className={styles.section__image_mobile} />
         <h2 className={styles.section__heading}>
           Delegate tasks to those who enjoy them
         </h2>

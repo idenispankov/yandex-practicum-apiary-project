@@ -182,3 +182,101 @@
     margin-bottom: 10px;
   }
 }
+
+@media screen and (max-width: 1015px) {
+  .project {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    gap: 0;
+  }
+  .project__image_container {
+    margin-bottom: 16px;
+  }
+  .project_text__container {
+    padding: 20px 12px;
+  }
+  .project__review {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin-bottom: 40px;
+  }
+  .project__review_owner_card {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .project {
+    max-width: 300px;
+    margin-bottom: 10px;
+  }
+  .project__image_container {
+    max-width: 320px;
+    max-height: 237px;
+  }
+  .project_text__container {
+    min-height: 261px;
+  }
+  .project__heading {
+    font-size: 32px;
+    line-height: 37px;
+    margin-bottom: 16px;
+  }
+  .project__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .project__review_owner_card {
+    padding: 20px 12px;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .owner__heading {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 4px;
+  }
+  .owner__image__container {
+    margin-right: 12px;
+  }
+  .owner__heading__container {
+    margin-bottom: 32px;
+  }
+  .owner__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .project__review_students_card {
+    padding: 20px 12px;
+    max-width: 300px;
+  }
+  .students_header__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .students__image_first_container,
+  .students__image_second_container,
+  .students__image_third_container {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 16px;
+  }
+  .owner__image__container {
+    width: 40px;
+    height: 40px;
+  }
+  .students__heading {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .students__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
