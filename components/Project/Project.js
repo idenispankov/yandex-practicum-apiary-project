@@ -44,7 +44,12 @@ export default function Project({
           </div>
           <div className={styles.project_text__container_footer}>
             <p className={styles.footer__text}>{projectDate}</p>
-            <a className={styles.footer__link} href={projectWebsiteLink}>
+            <a
+              target='_blank'
+              rel='noopener noreferrer'
+              className={styles.footer__link}
+              href={projectWebsiteLink}
+            >
               {projectWebsiteText}
             </a>
           </div>
