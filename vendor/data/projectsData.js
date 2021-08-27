@@ -85,7 +85,7 @@ const projectsData = {
     },
     {
       id: 2,
-      projectName: 'Prim-U',
+      projectName: 'Allcorrect, DS',
       projectDescription:
         'Allcorrect Games provides video game localization, localization testing, voiceovers, game art, and playable ads. Task: to analyze apps reviews about localization quality on marketplaces like App Store / Google Play / Steam.',
       projectImageSrc: '/images/allcorrect.png',
@@ -114,7 +114,7 @@ const projectsData = {
   science: [
     {
       id: 1,
-      projectName: 'Prim-U',
+      projectName: 'Allcorrect, DS',
       projectDescription:
         'Allcorrect Games provides video game localization, localization testing, voiceovers, game art, and playable ads. Task: to analyze apps reviews about localization quality on marketplaces like App Store / Google Play / Steam.',
       projectImageSrc: '/images/allcorrect.png',
