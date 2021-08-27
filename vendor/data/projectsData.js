@@ -60,7 +60,9 @@ const projectsData = {
       id: 1,
       projectName: 'Norbu, DA',
       projectDescription:
-        'Norbu Stress Control is the first anti-stress app that teaches to manage stress and emotions on the physical level. Task: to calculate main product metrics, research possible reasons for users behaviour such as retention, payments, app removal, etc. and analyze User journey behaviour.',
+        'Norbu Stress Control is the first anti-stress app that teaches to manage stress and emotions on the physical level.',
+      projectSecodaryDescription:
+        'Task: to calculate main product metrics, research possible reasons for users behaviour such as retention, payments, app removal, etc. and analyze User journey behaviour.',
       projectImageSrc: '/images/norbu.png',
       projectImageAlt: 'Ant robotics landing page',
       projectDate: 'May 2021',
@@ -87,7 +89,9 @@ const projectsData = {
       id: 2,
       projectName: 'Allcorrect, DS',
       projectDescription:
-        'Allcorrect Games provides video game localization, localization testing, voiceovers, game art, and playable ads. Task: to analyze apps reviews about localization quality on marketplaces like App Store / Google Play / Steam.',
+        'Allcorrect Games provides video game localization, localization testing, voiceovers, game art, and playable ads.',
+      projectSecodaryDescription:
+        'Task: to analyze apps reviews about localization quality on marketplaces like App Store / Google Play / Steam.',
       projectImageSrc: '/images/allcorrect.png',
       projectImageAlt: 'Prim-U landing page',
       projectDate: 'May 2021',
@@ -116,7 +120,9 @@ const projectsData = {
       id: 1,
       projectName: 'Allcorrect, DS',
       projectDescription:
-        'Allcorrect Games provides video game localization, localization testing, voiceovers, game art, and playable ads. Task: to analyze apps reviews about localization quality on marketplaces like App Store / Google Play / Steam.',
+        'Allcorrect Games provides video game localization, localization testing, voiceovers, game art, and playable ads.',
+      projectSecodaryDescription:
+        'Task: to analyze apps reviews about localization quality on marketplaces like App Store / Google Play / Steam.',
       projectImageSrc: '/images/allcorrect.png',
       projectImageAlt: 'Prim-U landing page',
       projectDate: 'May 2021',
@@ -143,7 +149,9 @@ const projectsData = {
       id: 2,
       projectName: 'Norbu, DA',
       projectDescription:
-        'Norbu Stress Control is the first anti-stress app that teaches to manage stress and emotions on the physical level. Task: to calculate main product metrics, research possible reasons for users behaviour such as retention, payments, app removal, etc. and analyze User journey behaviour.',
+        'Norbu Stress Control is the first anti-stress app that teaches to manage stress and emotions on the physical level.',
+      projectSecodaryDescription:
+        'Task: to calculate main product metrics, research possible reasons for users behaviour such as retention, payments, app removal, etc. and analyze User journey behaviour.',
       projectImageSrc: '/images/norbu.png',
       projectImageAlt: 'Ant robotics landing page',
       projectDate: 'May 2021',

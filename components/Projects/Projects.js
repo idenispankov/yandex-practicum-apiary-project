@@ -11,29 +11,17 @@ const PROJECTS = {
 };
 
 export default function Projects({ setIsModalOpen }) {
-  const [webDevelopment, setWebDevelopment] = useState(true);
-  const [dataAnalysis, setDataAnalysis] = useState(false);
-  const [dataScience, setDataScience] = useState(false);
   const [active, setActive] = useState(PROJECTS.web);
 
   const handleWebDevelopmentClick = () => {
-    setDataAnalysis(false);
-    setDataScience(false);
-    setWebDevelopment(true);
     setActive('web');
   };
 
   const handleDataAnalysisClick = () => {
-    setDataScience(false);
-    setWebDevelopment(false);
-    setDataAnalysis(true);
     setActive('analysis');
   };
 
   const handleDataScienceClick = () => {
-    setDataAnalysis(false);
-    setWebDevelopment(false);
-    setDataScience(true);
     setActive('science');
   };
 
@@ -78,6 +66,7 @@ export default function Projects({ setIsModalOpen }) {
                 <Project
                   projectName={item.projectName}
                   projectDescription={item.projectDescription}
+                  projectSecodaryDescription={item.projectSecodaryDescription}
                   projectImageSrc={item.projectImageSrc}
                   projectImageAlt={item.projectImageAlt}
                   projectDate={item.projectDate}

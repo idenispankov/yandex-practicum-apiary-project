@@ -23,6 +23,7 @@ export default function Project({
   thirdStudentImageAlt,
   studentsNames,
   studentsReviewText,
+  projectSecodaryDescription,
 }) {
   return (
     <>
@@ -41,6 +42,7 @@ export default function Project({
           <div>
             <h3 className={styles.project__heading}>{projectName}</h3>
             <p className={styles.project__text}>{projectDescription}</p>
+            <p className={styles.project__text}>{projectSecodaryDescription}</p>
           </div>
           <div className={styles.project_text__container_footer}>
             <p className={styles.footer__text}>{projectDate}</p>
