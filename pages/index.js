@@ -38,7 +38,7 @@ export default function Home() {
       <MessagesSection setIsModalOpen={setIsModalOpen} />
       <HowToStart setIsModalOpen={setIsModalOpen} /> */}
       <Projects setIsModalOpen={setIsModalOpen} />
-      <WhyChooseUs />
+      {/* <WhyChooseUs /> */}
       <ModalWithForm
         isModalOpen={isModalOpen}
         setIsModalOpen={setIsModalOpen}

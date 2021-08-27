@@ -33,9 +33,7 @@ export default function Project({
             className={styles.project__image}
             src={projectImageSrc}
             alt={projectImageAlt}
-            layout='responsive'
-            width={630}
-            height={365}
+            layout='fill'
           />
         </div>
         <div className={styles.project_text__container}>

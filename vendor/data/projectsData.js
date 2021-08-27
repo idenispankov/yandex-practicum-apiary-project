@@ -17,11 +17,11 @@ const projectsData = {
       ownerReview:
         '“The Data Analytics students have highlighted a few languages which show a growing demand for translation and expanded our list of keywords to detect more translation-related user reviews,” Demid said. “The Data Science students tested a wide range of natural language processing algorithms, including deep machine learning...',
       ownerFullReviewLink: 'https://google.com',
-      firstStudentImageSrc: '/images/ant_robotics.png',
+      firstStudentImageSrc: '/images/maxim_antonenko.png',
       firstStudentImageAlt: 'some name',
-      secondStudentImageSrc: '/images/ant_robotics.png',
+      secondStudentImageSrc: '/images/maxim_antonenko.png',
       secondStudentImageAlt: 'some name',
-      thirdStudentImageSrc: '/images/ant_robotics.png',
+      thirdStudentImageSrc: '/images/maxim_antonenko.png',
       thirdStudentImageAlt: 'some name',
       studentsNames: 'Maria Wright, Maria Wright, Enyel Sequeira',
       studentsReviewText:
@@ -44,11 +44,11 @@ const projectsData = {
       ownerReview:
         '“Employee performance reviews are key to offering helpful feedback to managers and employees. But not knowing what to say or write can make the process downright painful — especially when you’re on a deadline. If you do annual performance reviews, it is important to get it right. This is key to boosting employee engagement.”',
       ownerFullReviewLink: 'https://google.com',
-      firstStudentImageSrc: '/images/ant_robotics.png',
+      firstStudentImageSrc: '/images/maxim_antonenko.png',
       firstStudentImageAlt: 'some name',
-      secondStudentImageSrc: '/images/ant_robotics.png',
+      secondStudentImageSrc: '/images/maxim_antonenko.png',
       secondStudentImageAlt: 'some name',
-      thirdStudentImageSrc: '/images/ant_robotics.png',
+      thirdStudentImageSrc: '/images/maxim_antonenko.png',
       thirdStudentImageAlt: 'some name',
       studentsNames: 'Maria Wright, Maria Wright, Enyel Sequeira',
       studentsReviewText:
@@ -75,11 +75,11 @@ const projectsData = {
       ownerReview:
         '“The Data Analytics students have highlighted a few languages which show a growing demand for translation and expanded our list of keywords to detect more translation-related user reviews,” Demid said. “The Data Science students tested a wide range of natural language processing algorithms, including deep machine learning...',
       ownerFullReviewLink: 'https://google.com',
-      firstStudentImageSrc: '/images/ant_robotics.png',
+      firstStudentImageSrc: '/images/maxim_antonenko.png',
       firstStudentImageAlt: 'some name',
-      secondStudentImageSrc: '/images/ant_robotics.png',
+      secondStudentImageSrc: '/images/maxim_antonenko.png',
       secondStudentImageAlt: 'some name',
-      thirdStudentImageSrc: '/images/ant_robotics.png',
+      thirdStudentImageSrc: '/images/maxim_antonenko.png',
       thirdStudentImageAlt: 'some name',
       studentsNames: 'Maria Wright, Maria Wright, Enyel Sequeira',
       studentsReviewText:
@@ -104,11 +104,11 @@ const projectsData = {
       ownerReview:
         '“Employee performance reviews are key to offering helpful feedback to managers and employees. But not knowing what to say or write can make the process downright painful — especially when you’re on a deadline. If you do annual performance reviews, it is important to get it right. This is key to boosting employee engagement.”',
       ownerFullReviewLink: 'https://google.com',
-      firstStudentImageSrc: '/images/ant_robotics.png',
+      firstStudentImageSrc: '/images/maxim_antonenko.png',
       firstStudentImageAlt: 'some name',
-      secondStudentImageSrc: '/images/ant_robotics.png',
+      secondStudentImageSrc: '/images/maxim_antonenko.png',
       secondStudentImageAlt: 'some name',
-      thirdStudentImageSrc: '/images/ant_robotics.png',
+      thirdStudentImageSrc: '/images/maxim_antonenko.png',
       thirdStudentImageAlt: 'some name',
       studentsNames: 'Maria Wright, Maria Wright, Enyel Sequeira',
       studentsReviewText:
@@ -135,11 +135,11 @@ const projectsData = {
       ownerReview:
         '“Employee performance reviews are key to offering helpful feedback to managers and employees. But not knowing what to say or write can make the process downright painful — especially when you’re on a deadline. If you do annual performance reviews, it is important to get it right. This is key to boosting employee engagement.”',
       ownerFullReviewLink: 'https://google.com',
-      firstStudentImageSrc: '/images/ant_robotics.png',
+      firstStudentImageSrc: '/images/maxim_antonenko.png',
       firstStudentImageAlt: 'some name',
-      secondStudentImageSrc: '/images/ant_robotics.png',
+      secondStudentImageSrc: '/images/maxim_antonenko.png',
       secondStudentImageAlt: 'some name',
-      thirdStudentImageSrc: '/images/ant_robotics.png',
+      thirdStudentImageSrc: '/images/maxim_antonenko.png',
       thirdStudentImageAlt: 'some name',
       studentsNames: 'Maria Wright, Maria Wright, Enyel Sequeira',
       studentsReviewText:
@@ -164,11 +164,11 @@ const projectsData = {
       ownerReview:
         '“The Data Analytics students have highlighted a few languages which show a growing demand for translation and expanded our list of keywords to detect more translation-related user reviews,” Demid said. “The Data Science students tested a wide range of natural language processing algorithms, including deep machine learning...',
       ownerFullReviewLink: 'https://google.com',
-      firstStudentImageSrc: '/images/ant_robotics.png',
+      firstStudentImageSrc: '/images/maxim_antonenko.png',
       firstStudentImageAlt: 'some name',
-      secondStudentImageSrc: '/images/ant_robotics.png',
+      secondStudentImageSrc: '/images/maxim_antonenko.png',
       secondStudentImageAlt: 'some name',
-      thirdStudentImageSrc: '/images/ant_robotics.png',
+      thirdStudentImageSrc: '/images/maxim_antonenko.png',
       thirdStudentImageAlt: 'some name',
       studentsNames: 'Maria Wright, Maria Wright, Enyel Sequeira',
       studentsReviewText:
