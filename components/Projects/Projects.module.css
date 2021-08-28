@@ -167,7 +167,8 @@
     margin: 0 auto;
   }
   .section__heading {
-    max-width: 240px;
+    max-width: 288px;
+    padding-right: 30px;
     text-align: start;
     font-size: 32px;
     line-height: 37px;
