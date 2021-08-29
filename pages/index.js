@@ -31,7 +31,19 @@ export default function Home() {
         <meta name='image' property='og:image' content='/og_image.png' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <Navbar setIsModalOpen={setIsModalOpen} />
+      <Navbar
+        setIsModalOpen={setIsModalOpen}
+        firstLink='We can help!'
+        firstLinkTo='#we-can-help'
+        secondLink='About'
+        secondLinkTo='#about'
+        thirdLink='How to start'
+        thirdLinkTo='#how-to-start'
+        forthLink='Projects'
+        forthLinkTo='#projects'
+        fifthLink='Contacts'
+        fifthLinkTo='#contacts'
+      />
       <Hero setIsModalOpen={setIsModalOpen} />
       <UseFullForYourCompany />
       <RequestsWeHelpWith />

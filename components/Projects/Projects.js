@@ -26,7 +26,7 @@ export default function Projects({ setIsModalOpen }) {
   };
 
   return (
-    <section className={styles.section}>
+    <section id='projects' className={styles.section}>
       <div className={styles.section__container}>
         <div className={styles.section__image_mobile} />
         <h2 className={styles.section__heading}>

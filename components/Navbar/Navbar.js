@@ -2,7 +2,21 @@ import styles from './Navbar.module.css';
 import Link from 'next/link';
 import { useState } from 'react';
 
-export default function Navbar({ setIsModalOpen }) {
+export default function Navbar({
+  setIsModalOpen,
+  firstLink,
+  firstLinkTo,
+  secondLink,
+  secondLinkTo,
+  thirdLink,
+  thirdLinkTo,
+  forthLink,
+  forthLinkTo,
+  fifthLink,
+  fifthLinkTo,
+  listStyles,
+  firstLinkStyles,
+}) {
   const [isHamburgerMenuOpen, setIsHamburgerMenuOpen] = useState(false);
 
   const openModal = () => {
@@ -20,45 +34,51 @@ export default function Navbar({ setIsModalOpen }) {
             ></div>
           </a>
         </Link>
-        <ul className={`${styles.list} ${isHamburgerMenuOpen && styles.show}`}>
+        <ul
+          className={`${styles.list} ${
+            isHamburgerMenuOpen && styles.show
+          } ${listStyles}`}
+        >
           <li
             className={styles.list__item}
             onClick={() => setIsHamburgerMenuOpen(!isHamburgerMenuOpen)}
           >
-            <Link href='#we-can-help'>
-              <a className={styles.list__link}>We can help!</a>
+            <Link href={firstLinkTo}>
+              <a className={`${styles.list__link} ${firstLinkStyles}`}>
+                {firstLink}
+              </a>
             </Link>
           </li>
           <li
             className={styles.list__item}
             onClick={() => setIsHamburgerMenuOpen(!isHamburgerMenuOpen)}
           >
-            <Link href='#about'>
-              <a className={styles.list__link}>About</a>
+            <Link href={secondLinkTo}>
+              <a className={styles.list__link}>{secondLink}</a>
             </Link>
           </li>
           <li
             className={styles.list__item}
             onClick={() => setIsHamburgerMenuOpen(!isHamburgerMenuOpen)}
           >
-            <Link href='#how-to-start'>
-              <a className={styles.list__link}>How to start</a>
+            <Link href={thirdLinkTo}>
+              <a className={styles.list__link}>{thirdLink}</a>
             </Link>
           </li>
           <li
             className={styles.list__item}
             onClick={() => setIsHamburgerMenuOpen(!isHamburgerMenuOpen)}
           >
-            <Link href='#'>
-              <a className={styles.list__link}>Projects</a>
+            <Link href={forthLinkTo}>
+              <a className={styles.list__link}>{forthLink}</a>
             </Link>
           </li>
           <li
             className={styles.list__item}
             onClick={() => setIsHamburgerMenuOpen(!isHamburgerMenuOpen)}
           >
-            <Link href='#contacts'>
-              <a className={styles.list__link}>Contacts</a>
+            <Link href={fifthLinkTo}>
+              <a className={styles.list__link}>{fifthLink}</a>
             </Link>
           </li>
           <li
