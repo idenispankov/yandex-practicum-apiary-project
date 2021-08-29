@@ -13,5 +13,48 @@
   }
   .list {
     padding-top: 0;
+    min-height: 1828px;
+  }
+}
+
+@media screen and (max-width: 724px) {
+  .list {
+    min-height: 1863px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .list {
+    min-height: 1919px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .list {
+    min-height: 1960px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .list {
+    min-height: 2000px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .list {
+    min-height: 2060px;
+  }
+}
+
+@media screen and (max-width: 469px) {
+  .list {
+    min-height: 2120px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .list {
+    min-height: 1660px;
   }
 }
