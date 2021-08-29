@@ -1,0 +1,30 @@
+.list {
+  align-items: center;
+  justify-content: center;
+}
+
+.link {
+  margin-right: 32px;
+}
+
+@media screen and (max-width: 950px) {
+  .link {
+    margin-right: 0;
+  }
+  .list {
+    padding-top: 0;
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .list {
+    height: 520px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .list {
+    height: 650px;
+  }
+}
