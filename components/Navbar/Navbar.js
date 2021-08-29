@@ -26,7 +26,7 @@ export default function Navbar({
   return (
     <header className={styles.header}>
       <nav className={styles.navbar}>
-        <Link href='/'>
+        <Link href='/' id='top'>
           <a>
             <div
               className={styles.logo}

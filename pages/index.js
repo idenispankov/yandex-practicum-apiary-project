@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { useState } from 'react';
 import Navbar from '../components/Navbar/Navbar';
+import Footer from '../components/Footer/Footer';
 import Hero from '../components/Hero/Hero';
 import ModalWithForm from '../components/Modal/ModalWithForm';
 import Tooltip from '../components/Tooltip/Tooltip';
@@ -57,6 +58,7 @@ export default function Home() {
         setTooltipOpen={setTooltipOpen}
       />
       <Tooltip tooltipOpen={tooltipOpen} setTooltipOpen={setTooltipOpen} />
+      <Footer linkToAbout='#about' />
     </>
   );
 }

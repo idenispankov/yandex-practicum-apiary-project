@@ -1,15 +1,15 @@
 import styles from './Footer.module.css';
 import Link from 'next/link';
 
-export default function Footer() {
+export default function Footer({ linkToAbout }) {
   return (
     <footer id='contacts' className={styles.footer}>
       <div className={styles.footer__container}>
         <div className={styles.links__container}>
-          <Link href='#about'>
+          <Link href={linkToAbout}>
             <a className={styles.local__link}>About Us</a>
           </Link>
-          <Link href='/'>
+          <Link href='#top'>
             <a className={styles.local__link}>Back to top &uarr;</a>
           </Link>
         </div>
