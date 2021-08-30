@@ -26,7 +26,7 @@ export default function MessagesSection({ setIsModalOpen }) {
             job. At the same time, the level of our training allows graduates to
             carry out high-quality real projects of companies under the review
             of experienced mentors.
-            <div className={styles.message__avatar}></div>
+            <span className={styles.message__avatar} />
           </p>
         </div>
         <div className={styles.question__container}>
@@ -40,7 +40,7 @@ export default function MessagesSection({ setIsModalOpen }) {
             and give them to graduates of Data Science and Data Analytics
             courses. The results of these tasks will be repeatedly checked by
             curators and returned to the customer as ordered for free.
-            <div className={styles.message__avatar}></div>
+            <span className={styles.message__avatar} />
           </p>
         </div>
         <div className={styles.question__container}>
@@ -53,7 +53,7 @@ export default function MessagesSection({ setIsModalOpen }) {
             Because Practicum has students who are eager to gain real life
             experience, find them interesting and useful, and are ready to take
             on your tasks
-            <div className={styles.message__avatar}></div>
+            <span className={styles.message__avatar} />
           </p>
         </div>
         <div className={styles.question__container}>
