@@ -7,6 +7,18 @@
   margin-right: 32px;
 }
 
+.container {
+  display: none;
+}
+
+.buttons__container {
+  display: none;
+}
+
+.projects__list {
+  list-style: none;
+}
+
 @media screen and (max-width: 950px) {
   .link {
     margin-right: 0;
@@ -20,6 +32,9 @@
 @media screen and (max-width: 680px) {
   .list {
     height: 520px;
+  }
+  .projects__list {
+    margin: 0 auto;
   }
 }
 

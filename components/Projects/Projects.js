@@ -10,7 +10,14 @@ const PROJECTS = {
   science: 'science',
 };
 
-export default function Projects({ setIsModalOpen }) {
+export default function Projects({
+  setIsModalOpen,
+  heading,
+  text,
+  buttonsContainerStyles,
+  projectsContainer,
+  children,
+}) {
   const [active, setActive] = useState(PROJECTS.web);
 
   const handleWebDevelopmentClick = () => {
@@ -29,15 +36,12 @@ export default function Projects({ setIsModalOpen }) {
     <section id='projects' className={styles.section}>
       <div className={styles.section__container}>
         <div className={styles.section__image_mobile} />
-        <h2 className={styles.section__heading}>
-          Delegate tasks to those who enjoy them
-        </h2>
-        <p className={styles.section__text}>
-          Check out the projects our students have done for companies in the USA
-          and beyond
-        </p>
+        <h2 className={styles.section__heading}>{heading}</h2>
+        <p className={styles.section__text}>{text}</p>
         <div className={styles.section__image} />
-        <div className={styles.buttons__container}>
+        <div
+          className={`${styles.buttons__container} ${buttonsContainerStyles}`}
+        >
           <Button
             handleClick={handleWebDevelopmentClick}
             buttonStyles={`${styles.button} ${
@@ -60,7 +64,8 @@ export default function Projects({ setIsModalOpen }) {
             buttonText='Data science'
           />
         </div>
-        <ul className={styles.projecs__container}>
+        {children}
+        <ul className={`${styles.projecs__container} ${projectsContainer}`}>
           {projectsData[active].map((item) => {
             return (
               <li key={item.id} className={styles.project__container_item}>

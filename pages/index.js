@@ -15,7 +15,6 @@ import Projects from '../components/Projects/Projects';
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [tooltipOpen, setTooltipOpen] = useState(false);
-
   return (
     <>
       <Head>
@@ -51,7 +50,11 @@ export default function Home() {
       <MessagesSection setIsModalOpen={setIsModalOpen} />
       <HowToStart setIsModalOpen={setIsModalOpen} />
       <WhyChooseUs />
-      <Projects setIsModalOpen={setIsModalOpen} />
+      <Projects
+        heading='Delegate tasks to those who enjoy them'
+        text='Check out the projects our students have done for companies in the USA and beyond'
+        setIsModalOpen={setIsModalOpen}
+      />
       <ModalWithForm
         isModalOpen={isModalOpen}
         setIsModalOpen={setIsModalOpen}
