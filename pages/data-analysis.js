@@ -41,8 +41,7 @@ export default function DataAnalysisPage() {
         thirdCardText='We will divide users into segments, select a core, segment them by interests, and give recommendations regarding the most popular content for each group to increase their retention or formulate a discount policy.'
       />
       <Projects
-        heading='Delegate tasks to those who enjoy them'
-        text='Check out the projects our students have done for companies in the USA and beyond'
+        heading='Check out the data analysis  projects our students have done so far'
         setIsModalOpen={setIsModalOpen}
         projectsContainer={styles.container}
         buttonsContainerStyles={styles.buttons__container}

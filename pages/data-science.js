@@ -41,8 +41,7 @@ export default function DataSciencePage() {
         thirdCardText='We can recognize files of different types, create algorithms for finding errors in them, and generating reports.'
       />
       <Projects
-        heading='Delegate tasks to those who enjoy them'
-        text='Check out the projects our students have done for companies in the USA and beyond'
+        heading='Check out the data science  projects our students have done so far'
         setIsModalOpen={setIsModalOpen}
         projectsContainer={styles.container}
         buttonsContainerStyles={styles.buttons__container}

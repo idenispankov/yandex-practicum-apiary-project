@@ -41,8 +41,7 @@ export default function WebDevelopmentPage() {
         thirdCardText='We are able to work on highly complex websites with deeply nested pages.'
       />
       <Projects
-        heading='Delegate tasks to those who enjoy them'
-        text='Check out the projects our students have done for companies in the USA and beyond'
+        heading='Check out the web development projects our students have done so far'
         setIsModalOpen={setIsModalOpen}
         projectsContainer={styles.container}
         buttonsContainerStyles={styles.buttons__container}
