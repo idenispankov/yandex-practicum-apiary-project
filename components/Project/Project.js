@@ -1,56 +1,35 @@
 import styles from './Project.module.css';
 import Image from 'next/image';
 
-export default function Project({
-  projectName,
-  projectDescription,
-  projectImageSrc,
-  projectImageAlt,
-  projectDate,
-  projectWebsiteLink,
-  projectWebsiteText,
-  ownerImageSrc,
-  ownerImageAlt,
-  ownerName,
-  ownerTitle,
-  ownerReview,
-  ownerFullReviewLink,
-  firstStudentImageSrc,
-  firstStudentImageAlt,
-  secondStudentImageSrc,
-  secondStudentImageAlt,
-  thirdStudentImageSrc,
-  thirdStudentImageAlt,
-  studentsNames,
-  studentsReviewText,
-  projectSecodaryDescription,
-}) {
+export default function Project({ data }) {
   return (
     <>
       <div className={styles.project}>
         <div className={styles.project__image_container}>
           <Image
             className={styles.project__image}
-            src={projectImageSrc}
-            alt={projectImageAlt}
+            src={data.projectImageSrc}
+            alt={data.projectImageAlt}
             layout='fill'
           />
         </div>
         <div className={styles.project_text__container}>
           <div>
-            <h3 className={styles.project__heading}>{projectName}</h3>
-            <p className={styles.project__text}>{projectDescription}</p>
-            <p className={styles.project__text}>{projectSecodaryDescription}</p>
+            <h3 className={styles.project__heading}>{data.projectName}</h3>
+            <p className={styles.project__text}>{data.projectDescription}</p>
+            <p className={styles.project__text}>
+              {data.projectSecodaryDescription}
+            </p>
           </div>
           <div className={styles.project_text__container_footer}>
-            <p className={styles.footer__text}>{projectDate}</p>
+            <p className={styles.footer__text}>{data.projectDate}</p>
             <a
               target='_blank'
               rel='noopener noreferrer'
               className={styles.footer__link}
-              href={projectWebsiteLink}
+              href={data.projectWebsiteLink}
             >
-              {projectWebsiteText}
+              {data.projectWebsiteText}
             </a>
           </div>
         </div>
@@ -61,21 +40,21 @@ export default function Project({
             <div className={styles.owner__image__container}>
               <Image
                 className={styles.owner__image}
-                src={ownerImageSrc}
-                alt={ownerImageAlt}
+                src={data.ownerImageSrc}
+                alt={data.ownerImageAlt}
                 layout='responsive'
                 width={60}
                 height={60}
               />
             </div>
             <div className={styles.owner_title__container}>
-              <h3 className={styles.owner__heading}>{ownerName}</h3>
-              <p className={styles.owner__subheading}>{ownerTitle}</p>
+              <h3 className={styles.owner__heading}>{data.ownerName}</h3>
+              <p className={styles.owner__subheading}>{data.ownerTitle}</p>
             </div>
           </div>
-          <p className={styles.owner__text}>{ownerReview}</p>
+          <p className={styles.owner__text}>{data.ownerReview}</p>
           <a
-            href={ownerFullReviewLink}
+            href={data.ownerFullReviewLink}
             className={styles.owner_full_review_link}
           >
             Read full review
@@ -87,8 +66,8 @@ export default function Project({
               <div className={styles.students__image_first_container}>
                 <Image
                   className={styles.students__first_image}
-                  src={firstStudentImageSrc}
-                  alt={firstStudentImageAlt}
+                  src={data.firstStudentImageSrc}
+                  alt={data.firstStudentImageAlt}
                   layout='responsive'
                   width={60}
                   height={60}
@@ -97,8 +76,8 @@ export default function Project({
               <div className={styles.students__image_second_container}>
                 <Image
                   className={styles.students__second_image}
-                  src={secondStudentImageSrc}
-                  alt={secondStudentImageAlt}
+                  src={data.secondStudentImageSrc}
+                  alt={data.secondStudentImageAlt}
                   layout='responsive'
                   width={60}
                   height={60}
@@ -107,8 +86,8 @@ export default function Project({
               <div className={styles.students__image_third_container}>
                 <Image
                   className={styles.students__third_image}
-                  src={thirdStudentImageSrc}
-                  alt={thirdStudentImageAlt}
+                  src={data.thirdStudentImageSrc}
+                  alt={data.thirdStudentImageAlt}
                   layout='responsive'
                   width={60}
                   height={60}
@@ -117,10 +96,12 @@ export default function Project({
             </div>
             <div className={styles.students__title_container}>
               <h3 className={styles.students__heading}>Students team</h3>
-              <p className={styles.students__subheading}>{studentsNames}</p>
+              <p className={styles.students__subheading}>
+                {data.studentsNames}
+              </p>
             </div>
           </div>
-          <p className={styles.students__text}>{studentsReviewText}</p>
+          <p className={styles.students__text}>{data.studentsReviewText}</p>
         </div>
       </div>
     </>
