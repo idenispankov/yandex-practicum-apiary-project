@@ -7,7 +7,7 @@ export default function ProjectsPageNumberedCard({
 }) {
   return (
     <li className={styles.card}>
-      <h2 className={styles.card__number}>{cardNumber}</h2>
+      <span className={styles.card__number}>{cardNumber}</span>
       <p className={styles.card__heading}>{cardHeading}</p>
       <p className={styles.card__text}>{cardText}</p>
     </li>

@@ -69,20 +69,3 @@ export default function RequestsWeHelpWith() {
     </section>
   );
 }
-
-{
-  /* <div className={styles.two_cards__container}>
-            <Card
-              cardImage={professionalismImage}
-              cardAlt=''
-              cardHeading='Professionalism'
-              cardText='Practicum by Yandex is one of the most popular online education services in Russia, allowing students to get a new profession or master a new skill.'
-            />
-            <Card
-              cardImage={experienceImage}
-              cardAlt=''
-              cardHeading='Experience'
-              cardText='Our students are already working at Accenture, Tesla, Invitae. Our specialty is practical training for the real world.'
-            />
-          </div> */
-}
