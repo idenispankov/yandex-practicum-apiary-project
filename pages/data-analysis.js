@@ -50,30 +50,7 @@ export default function DataAnalysisPage() {
           {projectsData.analysis.map((item) => {
             return (
               <li key={item.id}>
-                <Project
-                  projectName={item.projectName}
-                  projectDescription={item.projectDescription}
-                  projectSecodaryDescription={item.projectSecodaryDescription}
-                  projectImageSrc={item.projectImageSrc}
-                  projectImageAlt={item.projectImageAlt}
-                  projectDate={item.projectDate}
-                  projectWebsiteLink={item.projectWebsiteLink}
-                  projectWebsiteText={item.projectWebsiteText}
-                  ownerImageSrc={item.ownerImageSrc}
-                  ownerImageAlt={item.ownerImageAlt}
-                  ownerName={item.ownerName}
-                  ownerTitle={item.ownerTitle}
-                  ownerReview={item.ownerReview}
-                  ownerFullReviewLink={item.ownerFullReviewLink}
-                  firstStudentImageSrc={item.firstStudentImageSrc}
-                  firstStudentImageAlt={item.firstStudentImageAlt}
-                  secondStudentImageSrc={item.secondStudentImageSrc}
-                  secondStudentImageAlt={item.secondStudentImageAlt}
-                  thirdStudentImageSrc={item.thirdStudentImageSrc}
-                  thirdStudentImageAlt={item.thirdStudentImageAlt}
-                  studentsNames={item.studentsNames}
-                  studentsReviewText={item.studentsReviewText}
-                />
+                <Project data={item} />
               </li>
             );
           })}
