@@ -19,6 +19,7 @@ export default function WhyChooseUs() {
       firstCardText='The Yandex search engine is the fourth ranked search engine in the world in terms of number of requests processed.'
       secondCardText='Practicum by Yandex is one of the most popular online education services in Russia, allowing students to get a new profession or master a new skill.'
       thirdCardText='Our students are already working at Accenture, Tesla, Invitae. Our specialty is practical training for the real world.'
+      cardAlt='some alt text'
     />
   );
 }
