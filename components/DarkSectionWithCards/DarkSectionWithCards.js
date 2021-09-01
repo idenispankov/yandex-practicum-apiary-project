@@ -23,7 +23,7 @@ export default function DarkSectionWithCards({
         <div className={styles.card__container}>
           <Card
             cardImage={firstImage}
-            cardAlt=''
+            cardAlt={cardAlt}
             cardHeading={firstCardHeading}
             cardText={firstCardText}
           />
@@ -36,7 +36,7 @@ export default function DarkSectionWithCards({
             />
             <Card
               cardImage={thirdImage}
-              cardAlt=''
+              cardAlt={cardAlt}
               cardHeading={thirdCardHeading}
               cardText={thirdCardText}
             />

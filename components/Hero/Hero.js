@@ -23,7 +23,7 @@ export default function Hero({ setIsModalOpen }) {
       <div className={styles.image__container}>
         <Image
           src={heroImage}
-          alt=''
+          alt='Meditating'
           width={542}
           height={530}
           layout='responsive'

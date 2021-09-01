@@ -15,7 +15,6 @@ export default function Navbar({
   fifthLink,
   fifthLinkTo,
   listStyles,
-  firstLinkStyles,
 }) {
   const [isHamburgerMenuOpen, setIsHamburgerMenuOpen] = useState(false);
 
@@ -44,9 +43,7 @@ export default function Navbar({
             onClick={() => setIsHamburgerMenuOpen(!isHamburgerMenuOpen)}
           >
             <Link href={firstLinkTo}>
-              <a className={`${styles.list__link} ${firstLinkStyles}`}>
-                {firstLink}
-              </a>
+              <a className={`${styles.list__link}`}>{firstLink}</a>
             </Link>
           </li>
           <li

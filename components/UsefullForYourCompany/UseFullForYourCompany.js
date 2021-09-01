@@ -7,6 +7,7 @@ export default function UseFullForYourCompany() {
   return (
     <DarkSectionWithCards
       firstImage={resourceImage}
+      cardAlt='background icons'
       secondImage={publicizeImage}
       thirdImage={boostImage}
       sectionHeading='Why is it useful for your company?'

@@ -38,7 +38,8 @@
   transition: all 0.3s linear;
 }
 
-.list__item:hover {
+.list__link:hover,
+.list__link:active {
   color: #000;
 }
 
