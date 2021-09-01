@@ -24,7 +24,7 @@ export default function RequestsWeHelpWith() {
               <div className={`${styles.card__image}`}>
                 <Image
                   src={webImage}
-                  alt=''
+                  alt='alt text'
                   width={400}
                   height={281}
                   layout='fixed'
@@ -40,7 +40,7 @@ export default function RequestsWeHelpWith() {
                 <div className={`${styles.card__image}`}>
                   <Image
                     src={dataAnalysisImage}
-                    alt=''
+                    alt='alt text'
                     width={400}
                     height={281}
                     layout='fixed'
@@ -55,7 +55,7 @@ export default function RequestsWeHelpWith() {
                 <div className={`${styles.card__image}`}>
                   <Image
                     src={dataScienceImage}
-                    alt=''
+                    alt='alt text'
                     width={400}
                     height={281}
                     layout='fixed'

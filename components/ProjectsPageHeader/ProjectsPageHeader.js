@@ -19,7 +19,7 @@ export default function ProjectsPageHeader({
         <div className={styles.image__container}>
           <Image
             src={imageSrc}
-            alt=''
+            alt='some alt text'
             width={267}
             height={217}
             layout='responsive'
