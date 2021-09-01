@@ -1,3 +1,5 @@
+import Head from 'next/head';
+
 import styles from '../styles/pageStyles.module.css';
 import { useState } from 'react';
 import Navbar from '../components/Navbar/Navbar';
@@ -14,6 +16,22 @@ export default function DataSciencePage() {
   const [tooltipOpen, setTooltipOpen] = useState(false);
   return (
     <>
+      <Head>
+        <title>Data Science | Practicum by Yandex </title>
+        <meta
+          name='description'
+          content='What data science requests can we help with?
+          Practicum by Yandex students are ready to undertake analytics of the data provided by the company or if necessary, are ready to conduct market research to obtain the necessary data for analysis.'
+        />
+        <meta
+          name='description'
+          property='og:description'
+          content='What data science requests can we help with?
+          Practicum by Yandex students are ready to undertake analytics of the data provided by the company or if necessary, are ready to conduct market research to obtain the necessary data for analysis.'
+        />
+        <meta name='image' property='og:image' content='/og_image.png' />
+        <link rel='icon' href='/favicon.ico' />
+      </Head>
       <Navbar
         setIsModalOpen={setIsModalOpen}
         firstLink='Back to homepage'

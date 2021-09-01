@@ -1,3 +1,5 @@
+import Head from 'next/head';
+
 import styles from '../styles/pageStyles.module.css';
 import { useState } from 'react';
 import Navbar from '../components/Navbar/Navbar';
@@ -14,6 +16,22 @@ export default function WebDevelopmentPage() {
   const [tooltipOpen, setTooltipOpen] = useState(false);
   return (
     <>
+      <Head>
+        <title>Web development | Practicum by Yandex </title>
+        <meta
+          name='description'
+          content='What web development requests can we help with?
+          Practicum by Yandex students are ready to build your website from your design or if necessary, we can ask our colleagues from the design team to create a unique design for your company and a website based on this design.'
+        />
+        <meta
+          name='description'
+          property='og:description'
+          content='What web development requests can we help with?
+          Practicum by Yandex students are ready to build your website from your design or if necessary, we can ask our colleagues from the design team to create a unique design for your company and a website based on this design.'
+        />
+        <meta name='image' property='og:image' content='/og_image.png' />
+        <link rel='icon' href='/favicon.ico' />
+      </Head>
       <Navbar
         setIsModalOpen={setIsModalOpen}
         firstLink='Back to homepage'
