@@ -53,6 +53,7 @@
 .button:hover {
   background: var(--orange-color);
   color: #fff;
+  transform: scale(1);
 }
 
 .button_active {
